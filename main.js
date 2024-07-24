@@ -17,5 +17,8 @@ console.log(divEll);
 const divAEllAdd = document.querySelector(".dropdown-toggle"); //тут непонятно есть класс dropdown и у тега p и у тега div
 divAEllAdd.insertAdjacentHTML("beforebegin", '<a href="#">link</a>');
 // 5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
+const btnDropdown = document.querySelector("#dropdownMenuButton");
+btnDropdown.id = "superDropdown";
+console.log(btnDropdown);
 // 6. Добавьте атрибут data-dd со значением 3 элементу у которого существует атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
 // 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
