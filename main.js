@@ -9,11 +9,13 @@ const btnEll = document.querySelector(".btn");
 btnEll.classList.toggle("btn-secondary");
 console.log(btnEll);
 // 3. Необходимо удалить класс "dropdown-menu" у элемента, у которого присутствует класс "menu".
-const divEll = document.querySelector('.menu');
-divEll.classList.remove('dropdown-menu');
+const divEll = document.querySelector(".menu");
+divEll.classList.remove("dropdown-menu");
 console.log(divEll);
 // 4. Используя метод insertAdjacentHTML добавьте после div'a с классом "dropdown" следующую разметку:
 // `<a href="#">link</a>`
+const divAEllAdd = document.querySelector(".dropdown-toggle"); //тут непонятно есть класс dropdown и у тега p и у тега div
+divAEllAdd.insertAdjacentHTML("beforebegin", '<a href="#">link</a>');
 // 5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
 // 6. Добавьте атрибут data-dd со значением 3 элементу у которого существует атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
 // 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
