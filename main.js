@@ -24,4 +24,6 @@ console.log(btnDropdown);
 const addData = document.querySelector("#superDropdown");
 addData.setAttribute("data-dd", "3"); //Причем тут dataset я так и не понял
 // 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
+divAEllAdd.removeAttribute('type');
+
 
